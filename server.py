@@ -20,7 +20,7 @@ def load(path):
 def cli():
     parser = argparse.ArgumentParser(description="SimpleServer")
     parser.add_argument("-host", help="host", required=True)
-    parser.add_argument("-port", help="port", required=True, )
+    parser.add_argument("-port", help="port", required=True)
     parser.add_argument("-pubkey", help="ssl certificate")
     parser.add_argument("-prikey", help="ssl private key")
     args = parser.parse_args()
