@@ -4,7 +4,7 @@ A simple server
 You can setup a http server by this application easily
 # download
 you should download the source code or binary file
-[download link]()
+[download link](https://github.com/littleli233/simpleServer/releases)
 
 # commands
 ```

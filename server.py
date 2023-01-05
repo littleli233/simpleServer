@@ -6,8 +6,11 @@ server = Flask(__name__)
 
 @server.route("/")
 def index():
-    with open("index.html", "r") as f:
-        return f.read()
+    try:
+        with open("index.html", "r") as f:
+            return f.read()
+    except FileNotFoundError:
+        return Response(None, status=404)
 
 @server.route("/<path:path>")
 def load(path):
